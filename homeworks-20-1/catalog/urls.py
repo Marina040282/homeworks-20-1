@@ -2,8 +2,8 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 
-from views import IndexListView, contacts
-from apps import CatalogConfig
+from catalog.views import IndexListView, contacts
+from catalog.apps import CatalogConfig
 
 app_name = CatalogConfig.name
 urlpatterns = [
